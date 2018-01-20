@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99ff99"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="CONTACTS"
+        android:background="#ffff1a"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="email address"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/e1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/e1"
+        android:text="Mail"
+        android:id="@+id/b1"
+        android:onClick="email"
+
+
+        />
+    </LinearLayout>
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center"
+
+             >
+        <EditText
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="telephone number"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:id="@+id/e2"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/b2"
+            android:layout_below="@+id/e2"
+            android:gravity="center"
+            android:text="Call"
+            android:layout_marginBottom="100dp"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
